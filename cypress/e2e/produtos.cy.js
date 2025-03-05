@@ -17,7 +17,7 @@ it.only('cadastrar produroto', () => {
     cy.request({
         method: 'POST',
         url: 'produtos',
-     header: {authorization: token},
+     headers: {authorization: token},
         body:{
             "nome": "iphon1e",
             "preco": 4700,
