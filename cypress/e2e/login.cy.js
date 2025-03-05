@@ -7,8 +7,8 @@ describe('teste de API - login', () => {
       method: 'POST',
       url: 'login',
       body: {
-        "email": "vitor@gbi.com.br",
-"password": "teste"
+        "email":  "vitor@gbi.com.br",
+        "password":  "teste"
       }
     }).then((response) => {
       cy.log(response.body.authorization)
